@@ -60,7 +60,8 @@ h6 {
 /* END OF RESET */
 
 body {
-  background-color: #644f4f;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 /* Attribution */
