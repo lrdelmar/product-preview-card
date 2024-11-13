@@ -1,7 +1,4 @@
-/*
-  Josh's Custom CSS Reset
-  https://www.joshwcomeau.com/css/custom-css-reset/
-*/
+@use "../util" as u;
 
 *,
 *::before,
@@ -62,6 +59,7 @@ h6 {
 body {
   background-color: var(--background-color);
   color: var(--text-color);
+  font-family: u.$font;
 }
 
 /* Attribution */
