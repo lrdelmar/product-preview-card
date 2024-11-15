@@ -1,13 +1,30 @@
-h1,
+@use '../util/' as u;
+
+h2 {
+  font-size: u.rem(34);
+}
 h2,
 h3 {
   font-weight: 700;
   line-height: 1.1;
   margin-top: 0;
+  font-family: u.font(fra);
 }
 
 p {
   margin-top: 0;
+  font-size: u.rem(14);
+}
+
+p,
+span,
+button {
+  font-family: u.font(mon);
+  font-weight: 500;
+}
+
+p.item__type {
+  font-size: u.rem(12);
 }
 
 a,

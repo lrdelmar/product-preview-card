@@ -1,17 +1,19 @@
-@use "../util" as u;
+@use '../util' as u;
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-  padding: 0;
+  box-sizing: inherit;
 }
 
 body {
+  margin: 0;
+  padding: 0;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -58,8 +60,24 @@ h6 {
 
 body {
   background-color: var(--background-color);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  color: var(--header-color);
+}
+
+p {
   color: var(--text-color);
-  font-family: u.$font;
+}
+
+p.item__type {
+  text-transform: uppercase;
+  letter-spacing: u.rem(6);
 }
 
 /* Attribution */

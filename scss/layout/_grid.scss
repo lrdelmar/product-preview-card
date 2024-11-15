@@ -1,0 +1,19 @@
+@use '../util/' as u;
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+
+  width: min(100% - u.rem(40), u.rem(1000));
+  margin: auto;
+  border-radius: u.rem(12);
+
+  img {
+    border-radius: u.rem(12) u.rem(12) 0 0;
+  }
+
+  &__container {
+    padding: u.rem(16);
+  }
+}

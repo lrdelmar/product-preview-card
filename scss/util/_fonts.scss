@@ -1,1 +1,11 @@
-$font: "Montserrat", sans-serif;
+@use 'sass:map';
+@use 'sass:string';
+
+$gfonts: (
+  'mon': "'Montserrat', sans-serif;",
+  'fra': "'Fraunces', serif;",
+);
+
+@function font($font) {
+  @return string.unquote(map.get($gfonts, $font));
+}
