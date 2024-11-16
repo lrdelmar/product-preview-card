@@ -5,7 +5,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
 
-  width: min(100% - u.rem(40), u.rem(1000));
+  width: min(100% - u.rem(36), u.rem(1000));
   margin: auto;
   border-radius: u.rem(12);
 
@@ -15,5 +15,16 @@
 
   &__container {
     padding: u.rem(16);
+  }
+
+  &__button {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+
+    img {
+    }
   }
 }

@@ -69,9 +69,17 @@ body {
 
 h2 {
   color: var(--header-color);
+  margin-bottom: u.rem(16);
+}
+
+h3.item__price::after {
+  content: '$169.99';
+  color: var(--text-color);
+  margin-left: u.rem(16);
 }
 
 p {
+  margin-top: u.rem(6);
   color: var(--text-color);
 }
 
@@ -80,12 +88,21 @@ p.item__type {
   letter-spacing: u.rem(6);
 }
 
+p.item__description {
+  margin-bottom: u.rem(24);
+}
+
+button {
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  padding: u.rem(10);
+  border: none;
+  border-radius: u.rem(6);
+}
+
 /* Attribution */
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
 .attribution a {
   color: hsl(228, 45%, 44%);
 }

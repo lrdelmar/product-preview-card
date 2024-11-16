@@ -11,14 +11,23 @@ h3 {
   font-family: u.font(fra);
 }
 
+h3.item__price {
+  font-size: u.rem(32);
+  color: hsl(158, 36%, 37%);
+}
+
+h3.item__price::after {
+  font-size: u.rem(14);
+  font-family: u.font(mon);
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
 p {
-  margin-top: 0;
   font-size: u.rem(14);
 }
 
-p,
-span,
-button {
+p {
   font-family: u.font(mon);
   font-weight: 500;
 }
@@ -31,4 +40,9 @@ a,
 a:visited,
 a:active {
   text-decoration: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
 }
