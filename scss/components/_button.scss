@@ -1,0 +1,22 @@
+@use '../util/' as u;
+
+button {
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  padding: u.rem(10);
+  border: none;
+  border-radius: u.rem(6);
+  font-family: u.font(mon);
+  display: flex;
+  justify-content: center;
+
+  img {
+    padding-right: u.rem(16);
+  }
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
+  // grid-template-rows: auto;
+  // justify-content: center;
+  // align-items: center;
+}
