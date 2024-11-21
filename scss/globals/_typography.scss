@@ -1,8 +1,10 @@
 @use '../util/' as u;
 
 h2 {
-  font-size: u.rem(34);
+  // font-size: u.rem(34);
+  font-size: clamp(u.rem(22), u.rem(22) + 3vw, u.rem(68));
 }
+
 h2,
 h3 {
   font-weight: 700;
@@ -11,26 +13,36 @@ h3 {
   font-family: u.font(fra);
 }
 
-h3.item__price {
-  font-size: u.rem(32);
+h3.item-price {
+  // font-size: u.rem(32);
+  font-size: clamp(u.rem(32), u.rem(32) + 2vw, u.rem(56));
   color: hsl(158, 36%, 37%);
 }
 
-h3.item__price::after {
-  font-size: u.rem(14);
+h3.item-price::after {
+  // font-size: u.rem(14);
+  font-size: clamp(u.rem(14), u.rem(14) + 2vw, u.rem(20));
   font-family: u.font(mon);
   font-weight: 500;
   text-decoration: line-through;
 }
 
 p {
-  font-size: u.rem(14);
+  font-size: clamp(u.rem(12), u.rem(14) + 1.5vw, u.rem(24));
   font-family: u.font(mon);
   font-weight: 500;
 }
 
-p.item__type {
-  font-size: u.rem(12);
+p.item-type {
+  text-transform: uppercase;
+  letter-spacing: u.rem(6);
+  // font-size: u.rem(12);
+  font-size: clamp(u.rem(12), u.rem(12) + 2vw, u.rem(18));
+
+  @include u.breakpoint(large) {
+    // font-size: u.rem(18);
+    letter-spacing: u.rem(10);
+  }
 }
 
 a,
@@ -40,6 +52,7 @@ a:active {
 }
 
 .attribution {
-  font-size: 11px;
+  // font-size: 11px;
+  font-size: clamp(u.rem(11), 3vw, u.rem(20));
   text-align: center;
 }
