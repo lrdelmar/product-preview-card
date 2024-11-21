@@ -19,11 +19,11 @@
   }
 
   @include u.breakpoint(medium) {
-    width: min(100% - u.rem(32), u.rem(600));
+    width: min(100% - u.rem(32), u.rem(650));
   }
 
   @include u.breakpoint(large) {
-    width: min(100% - u.rem(32), u.rem(1000));
+    width: min(100% - u.rem(32), u.rem(950));
     grid-template-columns: 1fr 1fr;
     justify-content: center;
 
@@ -34,7 +34,7 @@
     .img-desktop {
       display: block;
       border-radius: u.rem(12) 0 0 u.rem(12);
-      height: u.rem(800);
+      // height: min(100% - u.rem(32), u.rem(800));
     }
   }
 
@@ -43,9 +43,9 @@
 
     @include u.breakpoint(large) {
       display: grid;
-      height: u.rem(800);
-      padding: u.rem(32);
-      row-gap: u.rem(20);
+      // height: min(100% - u.rem(32), u.rem(800));
+      padding: u.rem(20);
+      // row-gap: 1%;
     }
   }
 }
