@@ -8,13 +8,15 @@ button {
   border: none;
   border-radius: u.rem(6);
   font-family: u.font(mon);
-  font-size: clamp(u.rem(12), u.rem(12) + 2vw, u.rem(24));
+  // font-size: clamp(u.rem(12), u.rem(12) + 2vw, u.rem(24));
+  font-size: clamp(u.rem(10), u.rem(10) + 1.5vw, u.rem(16));
   display: flex;
   justify-content: center;
   align-items: center;
 
   @include u.breakpoint(medium) {
     padding: u.rem(16);
+    font-size: clamp(u.rem(10), u.rem(10) + 1.5vw, u.rem(16));
   }
 
   img {

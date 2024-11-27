@@ -2,7 +2,7 @@
 
 h2 {
   // font-size: u.rem(34);
-  font-size: clamp(u.rem(22), u.rem(22) + 3vw, u.rem(68));
+  font-size: clamp(u.rem(22), u.rem(22) + 3vw, u.rem(40));
 }
 
 h2,
@@ -14,21 +14,20 @@ h3 {
 }
 
 h3.item-price {
-  // font-size: u.rem(32);
-  font-size: clamp(u.rem(32), u.rem(32) + 2vw, u.rem(56));
+  font-size: clamp(u.rem(22), u.rem(22) + 2vw, u.rem(40));
   color: hsl(158, 36%, 37%);
 }
 
 h3.item-price::after {
-  // font-size: u.rem(14);
-  font-size: clamp(u.rem(14), u.rem(14) + 2vw, u.rem(20));
+  font-size: clamp(u.rem(8), u.rem(8) + 1.5vw, u.rem(16));
   font-family: u.font(mon);
   font-weight: 500;
   text-decoration: line-through;
 }
 
 p {
-  font-size: clamp(u.rem(12), u.rem(14) + 1.5vw, u.rem(24));
+  font-size: clamp(u.rem(10), u.rem(10) + 1.5vw, u.rem(16));
+  // font-size: u.rem(12);
   font-family: u.font(mon);
   font-weight: 500;
 }
@@ -36,13 +35,7 @@ p {
 p.item-type {
   text-transform: uppercase;
   letter-spacing: u.rem(6);
-  // font-size: u.rem(12);
-  font-size: clamp(u.rem(12), u.rem(12) + 2vw, u.rem(18));
-
-  @include u.breakpoint(large) {
-    // font-size: u.rem(18);
-    letter-spacing: u.rem(10);
-  }
+  font-size: clamp(u.rem(6), u.rem(6) + 1.5vw, u.rem(16));
 }
 
 a,
@@ -53,6 +46,6 @@ a:active {
 
 .attribution {
   // font-size: 11px;
-  font-size: clamp(u.rem(11), 3vw, u.rem(20));
+  font-size: clamp(u.rem(8), u.rem(8) + 1.5vw, u.rem(16));
   text-align: center;
 }
