@@ -63,18 +63,16 @@ h2 {
   margin-bottom: u.rem(16);
 }
 
-h3.item-price::after {
-  content: '$169.99';
+h3.item-price,
+.item-old-price {
+  margin: 0;
+}
+
+.item-old-price {
   color: var(--text-color);
-  margin-left: u.rem(16);
+  text-decoration: line-through;
 }
 
 p {
   color: var(--text-color);
-}
-
-/* Attribution */
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
 }

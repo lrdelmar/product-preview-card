@@ -1,8 +1,7 @@
 @use '../util/' as u;
 
 h2 {
-  // font-size: u.rem(34);
-  font-size: clamp(u.rem(22), u.rem(22) + 3vw, u.rem(40));
+  font-size: clamp(u.rem(22), u.rem(22) + 3vw, u.rem(44));
 }
 
 h2,
@@ -18,7 +17,7 @@ h3.item-price {
   color: hsl(158, 36%, 37%);
 }
 
-h3.item-price::after {
+p.item-old-price {
   font-size: clamp(u.rem(8), u.rem(8) + 1.5vw, u.rem(16));
   font-family: u.font(mon);
   font-weight: 500;
@@ -26,8 +25,7 @@ h3.item-price::after {
 }
 
 p {
-  font-size: clamp(u.rem(10), u.rem(10) + 1.5vw, u.rem(16));
-  // font-size: u.rem(12);
+  font-size: clamp(u.rem(14), u.rem(10) + 1.5vw, u.rem(18));
   font-family: u.font(mon);
   font-weight: 500;
 }
@@ -35,7 +33,7 @@ p {
 p.item-type {
   text-transform: uppercase;
   letter-spacing: u.rem(6);
-  font-size: clamp(u.rem(6), u.rem(6) + 1.5vw, u.rem(16));
+  font-size: clamp(u.rem(10), u.rem(6) + 1.5vw, u.rem(16));
 }
 
 a,
@@ -45,7 +43,7 @@ a:active {
 }
 
 .attribution {
-  // font-size: 11px;
   font-size: clamp(u.rem(8), u.rem(8) + 1.5vw, u.rem(16));
   text-align: center;
+  color: hsl(228, 45%, 44%);
 }

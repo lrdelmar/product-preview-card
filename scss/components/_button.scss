@@ -4,27 +4,28 @@ button {
   background-color: hsl(158, 36%, 37%);
   color: hsl(0, 0%, 100%);
   width: 100%;
-  padding: u.rem(10);
+  padding: u.rem(16);
   border: none;
   border-radius: u.rem(6);
   font-family: u.font(mon);
-  // font-size: clamp(u.rem(12), u.rem(12) + 2vw, u.rem(24));
-  font-size: clamp(u.rem(10), u.rem(10) + 1.5vw, u.rem(16));
+  font-weight: 700;
+  font-size: clamp(u.rem(10), u.rem(10) + 1.5vw, u.rem(18));
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 300ms;
 
-  @include u.breakpoint(medium) {
-    padding: u.rem(16);
-    font-size: clamp(u.rem(10), u.rem(10) + 1.5vw, u.rem(16));
+  &:hover {
+    cursor: pointer;
+    background-color: hsl(158, 37%, 19%);
+  }
+
+  @include u.breakpoint(large) {
+    padding: u.rem(10);
+    // font-size: clamp(u.rem(16), u.rem(16) + 1.5vw, u.rem(20));
   }
 
   img {
     padding-right: u.rem(16);
   }
-  // display: grid;
-  // grid-template-columns: 1fr 1fr;
-  // grid-template-rows: auto;
-  // justify-content: center;
-  // align-items: center;
 }
