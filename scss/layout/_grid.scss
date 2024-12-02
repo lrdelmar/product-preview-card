@@ -39,8 +39,6 @@
     border-radius: 0 0 u.rem(12) u.rem(12);
 
     .item-pricing {
-      // display: grid;
-      // grid-template-columns: 1fr 2fr;
       display: flex;
       align-items: center;
       column-gap: u.rem(16);
