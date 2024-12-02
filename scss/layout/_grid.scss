@@ -19,7 +19,7 @@
 
   @include u.breakpoint(large) {
     grid-template-columns: 1fr 1fr;
-    width: min(100vw - u.rem(32), u.rem(800));
+    width: min(100vw - u.rem(32), u.rem(600));
 
     .img-mobile {
       display: none;
@@ -27,7 +27,7 @@
 
     .img-desktop {
       display: block;
-      width: u.rem(400);
+      width: u.rem(300);
       border-radius: u.rem(12) 0 0 u.rem(12);
     }
   }
@@ -39,8 +39,9 @@
     border-radius: 0 0 u.rem(12) u.rem(12);
 
     .item-pricing {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
+      // display: grid;
+      // grid-template-columns: 1fr 2fr;
+      display: flex;
       align-items: center;
       column-gap: u.rem(16);
       margin-bottom: u.rem(20);

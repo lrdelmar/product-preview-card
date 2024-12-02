@@ -1,7 +1,7 @@
 @use '../util/' as u;
 
 h2 {
-  font-size: clamp(u.rem(22), u.rem(22) + 3vw, u.rem(44));
+  font-size: clamp(u.rem(22), u.rem(22) + 3vw, u.rem(34));
 }
 
 h2,
@@ -13,19 +13,19 @@ h3 {
 }
 
 h3.item-price {
-  font-size: clamp(u.rem(22), u.rem(22) + 2vw, u.rem(40));
+  font-size: clamp(u.rem(22), u.rem(22) + 2vw, u.rem(34));
   color: hsl(158, 36%, 37%);
 }
 
 p.item-old-price {
-  font-size: clamp(u.rem(8), u.rem(8) + 1.5vw, u.rem(16));
+  font-size: clamp(u.rem(8), u.rem(8) + 1.5vw, u.rem(14));
   font-family: u.font(mon);
   font-weight: 500;
   text-decoration: line-through;
 }
 
 p {
-  font-size: clamp(u.rem(14), u.rem(10) + 1.5vw, u.rem(18));
+  font-size: clamp(u.rem(14), u.rem(10) + 1.5vw, u.rem(14));
   font-family: u.font(mon);
   font-weight: 500;
 }
@@ -33,7 +33,7 @@ p {
 p.item-type {
   text-transform: uppercase;
   letter-spacing: u.rem(6);
-  font-size: clamp(u.rem(10), u.rem(6) + 1.5vw, u.rem(16));
+  font-size: clamp(u.rem(10), u.rem(6) + 1.5vw, u.rem(14));
 }
 
 a,

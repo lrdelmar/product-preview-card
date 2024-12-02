@@ -22,16 +22,26 @@
   <body>
     <main>
       <section class="grid">
-        <img
-          class="grid__img img-mobile"
-          src="./images/image-product-mobile.jpg"
-          alt=""
-        />
-        <img
-          class="grid__img img-desktop"
-          src="./images/image-product-desktop.jpg"
-          alt=""
-        />
+        <picture>
+          <source
+            media="(max-width: 900px)"
+            srcset="./images/image-product-mobile.jpg"
+          />
+          <source
+            media="(max-width: 1440px)"
+            srcset="./images/image-product-desktop.jpg"
+          />
+          <img
+            class="grid__img img-mobile"
+            src="./images/image-product-mobile.jpg"
+            alt="Gabrielle Parfum"
+          />
+          <img
+            class="grid__img img-desktop"
+            src="./images/image-product-desktop.jpg"
+            alt="Gabrielle Parfum"
+          />
+        </picture>
         <div class="grid__container">
           <p class="item-type">Perfume</p>
           <h2>Gabrielle Essence Eau De Parfum</h2>
